@@ -5,32 +5,20 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var users = require('./routes/users');
+var todos = require('./routes/todos');
 
+var db = require('./modules/db');
 var app = express();
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mean-todo');
-var db = mongoose.connection;
-
-db.on('error',function(error){
-  if (error) {
-    console.log(error);
-  }
-});
-
-db.once('open',function(){
-  console.log('mean-todo open');
-});
 
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/users', users);
+app.use('/todos', todos);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
