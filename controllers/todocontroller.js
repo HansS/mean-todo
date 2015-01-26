@@ -1,11 +1,15 @@
 /**
  * Created by Hans on 26.01.2015.
  */
+var mongoose = require('mongoose');
+
 require('../models/todo');
+var Todo = mongoose.model('Todo');
+
 var _ = require('underscore');
 
-var mongoose = require('mongoose');
-var Todo = mongoose.model('Todo');
+
+
 
 exports.post = function(req,res){
   var todo = new Todo(req.body);
