@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5994d568-42fc-4ba1-9f92-62715e2292be" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Hans\web\mean\mean-todo\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Hans\web\mean\mean-todo\routes\users.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/todocontroller.js" afterPath="$PROJECT_DIR$/controllers/todocontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/todos.js" afterPath="$PROJECT_DIR$/routes/todos.js" />
     </list>
     <ignored path="mean-todo.iws" />
     <ignored path=".idea/workspace.xml" />
